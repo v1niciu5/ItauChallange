@@ -126,6 +126,7 @@ A resposta será um JSON com o histórico salvo, incluindo o texto gerado pelo m
 - Certifique-se de que seu banco de dados está rodando e acessível.
 - Verifique as strings de conexão no seu `.env` e `alembic.ini`.
 - Se receber erros de permissão, confira os privilégios do seu usuário PostgreSQL.
+- Garantir que os comandos de migração estejam rodando com alembic no ambiente do venv.
 
 ---
 
