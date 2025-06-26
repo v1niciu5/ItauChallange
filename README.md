@@ -77,6 +77,7 @@ alembic upgrade head
 
 ## 6. Execute a Aplicação
 ```bash
+export OPENROUTER_API_KEY=<sua_chave>
 uvicorn app.main:app --reload
 ```
 
@@ -87,6 +88,7 @@ A API estará disponível em [http://localhost:8000](http://localhost:8000)
 ## 7. Usando Docker Compose (Opcional)
 Se quiser rodar o app e o banco de dados com Docker Compose:
 ```bash
+export OPENROUTER_API_KEY=<sua_chave>
 docker-compose up --build
 ```
 
