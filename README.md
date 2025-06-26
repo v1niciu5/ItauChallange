@@ -64,7 +64,7 @@ GRANT CREATE ON DATABASE <dbname> TO <user>;
 source .venv/bin/activate
 
 # Defina o DATABASE_URL se não for carregado automaticamente
-export DATABASE_URL=postgresql://roots:batthing@localhost:5432/itautest
+export DATABASE_URL=postgresql://<usuario>:<senha>@localhost:<porta>/<nomedb>
 
 # Gere a migração inicial (se ainda não existir)
 alembic revision --autogenerate -m "Initial migration"
