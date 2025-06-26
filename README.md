@@ -35,10 +35,14 @@ pip install -r requirements.txt
 Crie um arquivo `.env` no diretório `app/` com o seguinte conteúdo:
 ```env
 DATABASE_URL=postgresql://<usuario>:<senha>@<host>:<porta>/<banco>
+OPENROUTER_API_KEY=<sua_chave>
 ```
+- `OPENROUTER_API_KEY` é obrigatória para o endpoint `/v1/chat` funcionar, pois permite a conexão com a OpenRouter API.
+
 Exemplo para desenvolvimento local:
 ```env
 DATABASE_URL=postgresql://roots:batthing@localhost:5432/itautest
+OPENROUTER_API_KEY=<sua_chave>
 ```
 
 ---
