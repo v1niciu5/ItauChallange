@@ -1,0 +1,145 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="Página-1" id="iuN9ajW-YXZ0fHGwbLKi">
+    <mxGraphModel dx="2037" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-59" value="VPC" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="170" y="160" width="1190" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-7" value="PrivateNATSubnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="190" width="680" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="618" y="540" width="412" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-20" value="PrivateSubnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="190" width="190" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-1" value="PublicSubnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="190" width="150" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-2" value="Internet&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.globe;" parent="1" vertex="1">
+          <mxGeometry x="40" y="261" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-3" value="AplicationLoadBalancer" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.elastic_load_balancing;" parent="1" vertex="1">
+          <mxGeometry x="231" y="261" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-3" target="m_lrRQUbOlLvNAeJ-CQL-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-9" value="SNS - promptqueue" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sns;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="676.75" y="262.5" width="76.5" height="76.5" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-11" value="SQS - promptqueue" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="820" y="254.25" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-5" target="m_lrRQUbOlLvNAeJ-CQL-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-9" target="m_lrRQUbOlLvNAeJ-CQL-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-14" value="SQS - promptqueue" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="463.5" y="582.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-15" target="m_lrRQUbOlLvNAeJ-CQL-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="779.25" y="791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-14" target="m_lrRQUbOlLvNAeJ-CQL-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-17" value="OpenRouterAPI" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" parent="1" vertex="1">
+          <mxGeometry x="1410" y="582.5" width="99.48" height="95.5" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.01;entryY=0.487;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-15" target="m_lrRQUbOlLvNAeJ-CQL-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-32" target="m_lrRQUbOlLvNAeJ-CQL-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1068.9920000000002" y="417.0239999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-2" target="m_lrRQUbOlLvNAeJ-CQL-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-26" target="m_lrRQUbOlLvNAeJ-CQL-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-26" value="CloudWatch Alarm&lt;div&gt;(ApproximateNumberOfMessagesVisible - promptqueue SQS)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.alarm;" parent="1" vertex="1">
+          <mxGeometry x="800" y="710" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-28" value="Multi AZ RDS Postgres" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_multi_az;" parent="1" vertex="1">
+          <mxGeometry x="1202" y="326" width="78" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-29" value="AutoScaling Rule" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.auto_scaling2;" parent="1" vertex="1">
+          <mxGeometry x="720" y="725" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-15" target="m_lrRQUbOlLvNAeJ-CQL-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="590" as="sourcePoint" />
+            <mxPoint x="1119" y="458" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-32" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="642" y="560" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-31" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="660" y="572" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-15" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="676" y="590" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.872;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-29" target="m_lrRQUbOlLvNAeJ-CQL-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-36" value="ECS PromptService" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="668" width="88" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-37" value="SQS - promptqueueDLQ" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="980" y="254.25" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-11" target="m_lrRQUbOlLvNAeJ-CQL-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-42" value="AutoScaling Rule" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.auto_scaling2;" parent="1" vertex="1">
+          <mxGeometry x="452" y="360" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-42" target="m_lrRQUbOlLvNAeJ-CQL-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-47" value="TotalNumberOfRequests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m_lrRQUbOlLvNAeJ-CQL-45" vertex="1" connectable="0">
+          <mxGeometry x="-0.0439" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-49" target="m_lrRQUbOlLvNAeJ-CQL-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-49" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="500" y="240" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-48" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="520" y="250" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-5" value="ProxyService ECS" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="540" y="261" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_lrRQUbOlLvNAeJ-CQL-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m_lrRQUbOlLvNAeJ-CQL-42" target="m_lrRQUbOlLvNAeJ-CQL-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K6y8Yo0zz6EQpLNVg8NS-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Banco de Dados&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Principais razões para escolha de PostgresSQL:&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Integridade de dados: postgres é um banco com uma maturidade grande, muitas funcionalidades implementadas e garantias de alocação segura de dados, sendo facil trabalhar com longevidade, uma grande comunidade e garantia de suporte.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- UUID: suporte nativo a utilização de UUID como chave primaria e uma boa indexação.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- Crescimento: se o projeto escalar teriamos boas opções para Postgres Servless, suporte integrações com outros serviços externos&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="930" width="410" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="K6y8Yo0zz6EQpLNVg8NS-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Observabilidade&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Para esse serviço sugiro duas opções:&lt;br&gt;&lt;br&gt;1 - Grafana (Baixo Custo): fazendo host próprio do grafana e configurando a exibição a partir de dados do CloudWatch para mostrar dashboards centralizados com principais informações para o desenvolvedor, fazendo com que ações possam ser tomadas rapidamente a partir de informações exibidas na pagina principal. Ponto fraco: muito trabalho manual e tempo de desenvolvimento.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;2 - Datadog (Qualidade): podendo inserir agentes proprios nos serviços e se alimentando de dados do proprio CloudWatch, o Datadog pode ser uma boa opção enquanto o APM for baixo. Podendo configurar agentes internos para monitorar tempo de chamadas e delay de serviços e configurar alarmes para situações de anomalias de serviços internos e externos. Ponto fraco: custo pode elevar com utilização detalhada do serviço.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="930" width="400" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="K6y8Yo0zz6EQpLNVg8NS-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Previnir falha de dependencias&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Importante é que todos serviços e banco de dados tenham parte em diferentes Availability Zones dentro da AWS para previnir que falhas ocorram dentro das diferentes AZ. Outro fator é, seria interessante adicionar diferentes serviços com LLM&#39;s diferentes consumindo da fila de prompt, assim garantindo que se uma LLM falhe em sua API, tenhamos outro serviço e possamos consumir mensagens e/ou desligar serviços com problemas e manter a funcionalidade.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="930" width="400" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
