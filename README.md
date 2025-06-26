@@ -130,4 +130,4 @@ A resposta será um JSON com o histórico salvo, incluindo o texto gerado pelo m
 ---
 
 ## Licença
-MIT 
+GNU v3
